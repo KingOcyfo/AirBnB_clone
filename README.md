@@ -13,17 +13,10 @@ Description 🏠
 
 HolbertonBnB is a complete web application, integrating database storage, a back-end API, and front-end interfacing in a clone of AirBnB.
 
-
-
 The project currently only implements the back-end console.
 
-
-
 Classes 🆑
-
 HolbertonBnB utilizes the following classes:
-
-
 
 BaseModel	FileStorage	User	State	City	Amenity	Place	Review
 
