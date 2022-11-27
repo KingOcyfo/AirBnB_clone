@@ -201,7 +201,7 @@ class HBNBCommand(cmd.Cmd):
                     valtype = type(obj.__class__.__dict__[k])
                     obj.__dict__[k] = valtype(v)
                 else:
-                    obj.__dict__[k] = 
+                    obj.__dict__[k] = v 
         storage.save()
 
 
