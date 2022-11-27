@@ -143,7 +143,7 @@ class HBNBCommand(cmd.Cmd):
                     objl.append(obj.__str__())
                 elif len(argl) == 0:
                     objl.append(obj.__str__())
-        print(objl)
+            print(objl)
 
     def do_count(self, arg):
         """Usage: count <class> or <class>.count()
