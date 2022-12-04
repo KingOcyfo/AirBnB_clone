@@ -30,6 +30,7 @@ def parse(arg):
         retl.append(curly_braces.group())
         return retl
 
+
 class HBNBCommand(cmd.Cmd):
     """Defines the HolbertonBnB command interpreter.
 
@@ -70,8 +71,8 @@ class HBNBCommand(cmd.Cmd):
                 if command[0] in argdict.keys():
                     call = "{} {}".format(argl[0], command[1])
                     return argdict[command[0]](call)
-         print("*** Unknown syntax: {}".format(arg))
-         return False
+        print("*** Unknown syntax: {}".format(arg))
+        return False
 
     def do_quit(self, arg):
         """Quit command to exit the program."""
@@ -143,7 +144,7 @@ class HBNBCommand(cmd.Cmd):
                     objl.append(obj.__str__())
                 elif len(argl) == 0:
                     objl.append(obj.__str__())
-        print(objl)
+            print(objl)
 
     def do_count(self, arg):
         """Usage: count <class> or <class>.count()
@@ -201,7 +202,7 @@ class HBNBCommand(cmd.Cmd):
                     valtype = type(obj.__class__.__dict__[k])
                     obj.__dict__[k] = valtype(v)
                 else:
-                    obj.__dict__[k] = 
+                    obj.__dict__[k] = v 
         storage.save()
 
 
